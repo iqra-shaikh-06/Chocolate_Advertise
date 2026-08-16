@@ -1,0 +1,264 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choco Bliss - Menu</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #18051f;
+      color: white;
+    }
+
+    /* Header */
+    header {
+      background: #250936;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #e0aaff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #e0aaff;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 70px 20px 50px;
+
+      background:
+        radial-gradient(circle at top left, #7b2cbf, transparent 35%),
+        linear-gradient(135deg, #18051f, #3c096c);
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      color: #e0aaff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #f3d9ff;
+    }
+
+    /* Menu */
+    .menu {
+      padding: 50px 8%;
+      text-align: center;
+    }
+
+    .menu h2 {
+      font-size: 38px;
+      color: #e0aaff;
+      margin-bottom: 35px;
+    }
+
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 25px;
+    }
+
+    .item {
+      background: linear-gradient(145deg, #35104f, #24102f);
+      padding: 25px;
+      border-radius: 20px;
+
+      border: 1px solid rgba(224,170,255,0.25);
+
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+      transition: 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(199,125,255,0.3);
+    }
+
+    .item .emoji {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .item h3 {
+      font-size: 23px;
+      color: #f1c6ff;
+      margin-bottom: 10px;
+    }
+
+    .item p {
+      color: #d9bde8;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 21px;
+      color: #e0aaff;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 22px;
+      border-radius: 25px;
+
+      background: linear-gradient(135deg, #c77dff, #9d4edd);
+      color: white;
+
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #e0aaff, #c77dff);
+      color: #32104f;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #250936;
+      color: #d9bde8;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">🍫 Choco Bliss</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Our Chocolate Menu</h1>
+    <p>Discover your new favorite chocolate treat 💜</p>
+  </section>
+
+  <!-- Menu -->
+  <section class="menu">
+
+    <h2>🍫 Sweet Delights</h2>
+
+    <div class="menu-container">
+
+      <!-- Item 1 -->
+      <div class="item">
+        <div class="emoji">🍫</div>
+        <h3>Classic Chocolate Bar</h3>
+        <p>
+          Smooth and creamy premium chocolate made with the finest cocoa.
+        </p>
+        <div class="price">₹149</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="item">
+        <div class="emoji">🍓</div>
+        <h3>Strawberry Chocolate</h3>
+        <p>
+          Fresh strawberry flavor combined with rich, creamy chocolate.
+        </p>
+        <div class="price">₹199</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="item">
+        <div class="emoji">🍪</div>
+        <h3>Chocolate Cookies</h3>
+        <p>
+          Crispy cookies loaded with delicious chocolate chips.
+        </p>
+        <div class="price">₹179</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="item">
+        <div class="emoji">🧁</div>
+        <h3>Chocolate Cupcake</h3>
+        <p>
+          Soft chocolate cupcake topped with creamy chocolate frosting.
+        </p>
+        <div class="price">₹129</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="item">
+        <div class="emoji">🍨</div>
+        <h3>Chocolate Sundae</h3>
+        <p>
+          Creamy vanilla ice cream topped with warm chocolate sauce.
+        </p>
+        <div class="price">₹229</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="item">
+        <div class="emoji">🍩</div>
+        <h3>Chocolate Donut</h3>
+        <p>
+          Fluffy donut covered with rich chocolate glaze and sprinkles.
+        </p>
+        <div class="price">₹99</div>
+        <a href="#" class="btn">Order Now</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Choco Bliss | Made with 💜 & 🍫</p>
+  </footer>
+
+</body>
+</html>
+```
